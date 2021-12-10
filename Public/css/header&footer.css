@@ -1,6 +1,17 @@
 .header {
     background-color: #081424;
     color: white;
+    height: 65px;
+}
+.header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #081424;
+    color: white;
+    z-index: 9999999999;
+    height: 65px;
 }
 .header .container {
     display: flex;
@@ -46,6 +57,11 @@
 .header li:active {
     opacity: 0.7;
 }
+.header .backdrop {
+}
+.backdrop {
+    background-color: #081424;
+}
 .backdrop .img {
     position: relative;
 }
@@ -64,6 +80,7 @@
 .backdrop h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: white;
 }
 .backdrop button {
     padding: 5px 25px;
@@ -71,5 +88,22 @@
 }
 
 .footer {
-    background-color: #081424;    
+    background-color: #081424;
+    color: white;
+}
+.footer .body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 -20px;
+}
+.footer .body div {
+    padding: 5px 20px;
+}
+.footer .body p {
+    margin-bottom: 20px;
+}
+.footer .link i {
+    color: white;
+    font-size: 30px;
 }

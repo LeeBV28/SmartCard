@@ -16,3 +16,6 @@ app.use(bodyParser.urlencoded({ extended:true}));
 app.get('/', function (req, res) {
     res.render("home");
 });
+app.get('/product', function(req,res) {
+    res.render('product')
+});

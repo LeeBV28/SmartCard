@@ -1,0 +1,255 @@
+.body {
+    margin-top: 20px;
+}
+.what-sc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.what-sc .img {
+    max-width: 50%;
+}
+.what-sc li {
+    list-style: inherit;
+}
+.what-sc p {
+    margin-bottom: 20px;
+}
+
+.how-sc h1 {
+    text-align: center;
+    margin-top: 35px;
+}
+.how-sc img {
+    max-width: 370px;
+    margin: 20px 0;
+}
+.how-sc .conten {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 -15px;
+}
+.how-sc .conten div {
+    padding: 0 15px;
+    text-align: center;
+}
+.share-sc {
+    margin-top: 30px;
+}
+.share-sc .conten {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px -65px
+}
+.share-sc .conten .item {
+    padding: 0 65px;
+}
+.icon {
+    width: 80px;
+    margin-right: 20px;
+}
+.conten-item .flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.conten-item .flex .text {
+    flex-basis: 100%;
+}
+.conten-item .flex h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.add-info {
+    background-color: #e3c4ad;
+    color: black;
+}
+.add-info .title {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.add-info .conten {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px -10px;
+}
+.add-info .conten .item {
+    width: 33.3333%;
+    padding: 0 10px;    
+}
+.add-info .conten .left {
+    text-align: end;
+}
+.add-info .conten .step {
+    margin-bottom: 35px;
+}
+.add-info .conten .step h2 {
+    font-size: 22px;
+    margin: 0;
+}
+.order {
+    display: flex;
+    margin: 0 -15px;
+    padding-bottom: 10px;
+}
+
+.model {
+    padding: 10px 15px;
+    position: relative;
+}
+.title {
+    margin: 10px 0;
+}
+.title h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.title-ct {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;    
+    font-weight: 800;
+    padding: 0 15px;
+}
+.title-ct p.active {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 10px;
+    flex-basis: 100%;
+    text-align: center;
+    background-color: white;
+    margin-bottom: -1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.title-ct p {
+    flex-basis: 100%;
+    text-align: center;
+}
+.order-card img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+.model button.btn.btn-primary {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    display: none;
+}
+.order-card .model:hover button {
+    display: block;
+}
+.slick-arrow {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 30px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.slick-arrow:hover {
+    background-color: #2cccff;
+    color: white;
+}
+button.slick-prev.slick-arrow {
+    left: -10px;
+}
+button.slick-next.slick-arrow {
+    right: -10px;
+}
+.see-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+ul.slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 135%);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.slick-dots button {
+    font-size: 0px;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    background: gray;
+    transition: all 0.2s linear;
+}
+li.slick-active {
+    border: 2px solid gray;
+    box-shadow: 0 0 10px #2cccff;
+}
+li.slick-active button {
+    background-color: #2cccff;
+}
+.the-best {
+    background-color: #081424;
+    color: white;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+.theBest-conten {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+.theBest-conten div {
+    width: 33.33333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;
+}
+.theBest-conten img {
+    width: 100px;
+}
+.the-best .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.the-best h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1.5px solid white;
+}
+.theBest-conten h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
