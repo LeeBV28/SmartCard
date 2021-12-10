@@ -1,0 +1,145 @@
+.body {
+    margin-top: 20px;
+}
+.what-sc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#80008000, #f7c6ce4f);
+}
+.what-sc .img {
+    max-width: 50%;
+}
+.what-sc li {
+    list-style: inherit;
+}
+.what-sc p {
+    margin-bottom: 20px;
+}
+
+.how-sc h1 {
+    text-align: center;
+    margin-top: 35px;
+}
+.how-sc img {
+    max-width: 370px;
+    margin: 20px 0;
+}
+.how-sc .conten {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 -15px;
+}
+.how-sc .conten div {
+    padding: 0 15px;
+    text-align: center;
+}
+.share-sc {
+    margin-top: 30px;
+}
+.share-sc .conten {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px -65px
+}
+.share-sc .conten .item {
+    padding: 0 65px;
+}
+.icon {
+    width: 80px;
+    margin-right: 20px;
+}
+.conten-item .flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.conten-item .flex .text {
+    flex-basis: 100%;
+}
+.conten-item .flex h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.add-info {
+    background-color: #e3c4ad;
+    color: black;
+}
+.add-info .title {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.add-info .conten {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px -10px;
+}
+.add-info .conten .item {
+    width: 33.3333%;
+    padding: 0 10px;    
+}
+.add-info .conten .left {
+    text-align: end;
+}
+.add-info .conten .step {
+    margin-bottom: 35px;
+}
+.add-info .conten .step h2 {
+    font-size: 22px;
+    margin: 0;
+}
+.order {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.model {
+    padding: 10px 15px;
+    position: relative;
+}
+.order-card img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+.model button.btn.btn-primary {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    display: none;
+}
+.order-card .model:hover button {
+    display: block;
+}
+.slick-arrow {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 30px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.slick-arrow:hover {
+    background-color: #2cccff;
+    color: white;
+}
+button.slick-prev.slick-arrow {
+    left: -10px;
+}
+button.slick-next.slick-arrow {
+    right: -10px;
+}

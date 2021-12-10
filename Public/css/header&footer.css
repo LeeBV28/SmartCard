@@ -2,6 +2,16 @@
     background-color: #081424;
     color: white;
 }
+.header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #081424;
+    color: white;
+    z-index: 9999999999;
+    height: 65px;
+}
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -45,6 +55,9 @@
 }
 .header li:active {
     opacity: 0.7;
+}
+.header .backdrop {
+    margin-top: 65px;
 }
 .backdrop .img {
     position: relative;
