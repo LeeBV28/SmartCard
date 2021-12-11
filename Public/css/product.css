@@ -1,0 +1,23 @@
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product-item {
+    width: 33.333%;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+.product-item .img {    
+    box-shadow: 0 0 10px gray;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product-item .img img {
+    margin: 10px;
+}
