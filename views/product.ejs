@@ -4,6 +4,16 @@
     <title>Document</title>
     <%- include('head') %>
     <link rel="stylesheet" href="/css/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <%- include('header') %>
@@ -14,42 +24,108 @@
             <div class="product">
                 <div class="product-item">
                     <div class="img">
-                        <img src="./img/Mau Card/23951 mt.png" alt="" class="front-face">
-                        <img src="./img/Mau Card/23951 ms.png" alt="" class="back-face">
-                        <h1>xem mat khac</h1>
+                        <div class="img-item">
+                            <img src="./img/Mau Card/23951 mt.png" alt="" class="front-face">
+                            <img src="./img/Mau Card/23951 ms.png" alt="" class="back-face">
+                        </div>
+                        <div class="option">
+                            <img src="./img/Mau Card/23951 ms.png" class="face" alt="">
+                            <button class="btn btn-primary" type="submit">Chọn Thẻ</button>
+                        </div>
                     </div>
                 </div>
                 <div class="product-item">
                     <div class="img">
-                        <img src="./img/Mau Card/5692498 mt.png" alt="" class="front-face">
-                        <img src="./img/Mau Card/5692498 ms.png" alt="" class="back-face">
+                        <div class="img-item">
+                            <img src="./img/Mau Card/23951 mt.png" alt="" class="front-face">
+                            <img src="./img/Mau Card/23951 ms.png" alt="" class="back-face">
+                        </div>
+                        <div class="option">
+                            <img src="./img/Mau Card/23951 ms.png" alt="">
+                            <button class="btn btn-primary" type="submit">Chọn Thẻ</button>
+                        </div>
                     </div>
                 </div>
                 <div class="product-item">
                     <div class="img">
-                        <img src="./img/Mau Card/SL_102319_24310_21 mt.png" alt="" class="front-face">
-                        <img src="./img/Mau Card/SL_102319_24310_21 ms.png" alt="" class="back-face">
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="img">
-                        <img src="./img/Mau Card/SL-100719-23970-78 mt.png" alt="" class="front-face">
-                        <img src="./img/Mau Card/SL-100719-23970-78 ms.png" alt="" class="back-face">
-                    </div>
-                </div>
-                <div class="product-item">
-                    <div class="img">
-                        <img src="./img/Mau Card/SL.121919.26160.57 mt.png" alt="" class="front-face">
-                        <img src="./img/Mau Card/SL.121919.26160.57 ms.png" alt="" class="back-face">
+                        <div class="img-item">
+                            <img src="./img/Mau Card/23951 mt.png" alt="" class="front-face">
+                            <img src="./img/Mau Card/23951 ms.png" alt="" class="back-face">
+                        </div>
+                        <div class="option">
+                            <img src="./img/Mau Card/23951 ms.png" alt="">
+                            <button class="btn btn-primary" type="submit">Chọn Thẻ</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="tag-nav">
+                <div class="pagination">
+                    <div class="prev">
+                        <p>Prev</p>
+                    </div>
+                    <div class="number">
+                        <ul>
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    </div>
+                    <div class="next">
+                        <p>Next</p>
+                    </div>
+                </div>
+                <p>- 100 items -</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup-setup">
+        <div class="container">
+            <div class="display">
+                <div class="logo">
+                    <h1>Thẻ Của Bạn</h1>
+                </div>
+                <div class="img-fontFace">
+                    <img src="./img/Mau Card/23951 mt trang.png" alt="" class="front-face">
+                    <h1 id="name-card-fontFace" class="edit-display">SmartCard</h1>
+                    <p id="slogan-card-fontFace" class="edit-display">Một Chạm Để Kết Nối</p>
+                </div>
+                <div class="img-backFace">
+                    <img src="./img/Mau Card/23951 ms trang.png" alt="" class="back-face">
+                    <h1 id="name-card-backFace" class="edit-display">Đồng Thị Nhung</h1>
+                    <p id="slogan-card-backCard" class="edit-display">Deverloper</p>
+                    <p id="address-card" class="edit-display">Sô 10, ngõ 17, Đại Mỗ, Nam Từ Liêm, Hà Nội</p>
+                    <p id="phone-card" class="edit-display">0353013130</p>
+                    <p id="mail-card" class="edit-display">smartcardtap@gmail.com</p>
+                    <p id="web-card" class="edit-display">smartcard.info.vn</p>
+                </div>
+                <div class="pay">
+                    <p>Tổng Đơn</p>
+                    <h1>199.000 đ</h1>
+                </div>
+            </div>
+            <div class="edit">
+                <h1>Chỉnh sửa thông tin cơ bản của bạn</h1>
+                <h2>Mặt Trước</h2>
+                <input type="text" class="form-control" id="nameFontFace" placeholder="SmartCard">
+                <input type="text" class="form-control" id="sloganFontFace" placeholder="Một Chạm Để Kết Nối">
 
+                <h2>Mặt Sau</h2>                
+                <input type="text" class="form-control" id="nameBackFace" placeholder="Đồng Thị Nhung">
+                <input type="text" class="form-control" id="sloganBackFace" placeholder="Deverloper">
+                <h2>thông tin thêm</h2>
+                <p>Các thông tin dưới đây không bắt buộc. Design sẽ tự động căn chỉnh lại cho bạn trước khi in ấn.</p>
+                <input type="text" class="form-control" id="address" placeholder="Sô 10, ngõ 17, Đại Mỗ, Nam Từ Liêm, Hà Nội">
+                <input type="text" class="form-control" id="phone" placeholder="0353013130">
+                <input type="text" class="form-control" id="mail" placeholder="smartcardtap@gmail.com">
+                <input type="text" class="form-control" id="web" placeholder="smartcard.info.vn">
             </div>
         </div>
     </div>
 
     <%- include('footer') %>       
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/product.js"></script>
 </body>
 </html>

@@ -4,20 +4,241 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    margin: 0 -10px;
 }
 .product-item {
     width: 33.333%;
-    overflow: hidden;
     padding: 10px 20px;
 }
 .product-item .img {    
     box-shadow: 0 0 10px gray;
     border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
 }
+.product-item .img-item {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.25s linear;
+}
 .product-item .img img {
-    margin: 10px;
+    box-shadow: 0 0 11px grey;
+    border-radius: 20px;
+}
+img.front-face {
+    margin-right: 15px;
+}
+.product .option {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product .option img {
+    width: 30%;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.product .option img:hover {
+    opacity: 1;
+}
+.tag-nav {
+    margin: 30px 0;
+}
+.pagination {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    background-color: #1E3344;
+    color: #6A89A0;
+    margin: 5px 100px;
+    font-weight: 600;
+    box-shadow: 0 0 11px #1e3344;
+    border-radius: 10px;
+}
+.number ul {
+    display: flex;
+    flex-basis: 100%;
+    margin: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.number ul li {
+    margin: 0px 10px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.number ul li.active {
+    color: #AE417D;
+    border: 2px solid #AE417D;
+    line-height: 32px;
+    border-radius: 50%;
+}
+.tag-nav p {
+    text-align: center;
+}
+.tag-nav .prev, .next {
+    color: #AE417D;
+    cursor: pointer;
+}
+.tag-nav .number ul li:active {
+    opacity: 0.8;
+}
+.number ul li.active:active {
+    opacity: 1;
+}
+.tag-nav .prev:active {
+    opacity: 0.8;
+}
+.tag-nav .next:active {
+    opacity: 0.8;
+}
+
+.popup-setup {
+    position: fixed;
+    z-index: 99;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #80808042;
+    margin-top: 62px;      
+    height: 100vh;
+    overflow: auto;
+}
+.popup-setup .container {
+    margin-top: 40px;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0 0 10px gray;
+}
+.display {
+    padding: 20px;
+    width: 40%;
+    flex-basis: 100%;
+    background-color: #F1EAE9;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.display .logo, .pay h1, p  {
+    text-align: center;
+    font-weight: 600;
+}
+.display .logo h1 {
+    font-weight: 500;
+    font-family: 'Alfa Slab One', cursive;
+}
+.display .pay {
+    margin-top: 10px;
+}
+.display div {
+    margin: 10px 0;
+    position: relative;
+}
+.edit {
+    padding: 20px;
+}
+.edit {
+    flex-basis: 100%;
+    width: 60%;
+}
+.display .edit-display {
+    position: absolute;
+    z-index: 999999;
+}
+
+/* position text card */
+h1#name-card-fontFace {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 26px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+p#slogan-card-fontFace {    
+    font-family: 'Pattaya', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 66%);
+}
+h1#name-card-backFace {
+    font-family: 'Markazi Text', serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: start;
+    top: 17%;
+    left: 26px;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: nesw-resize;
+}
+p#slogan-card-backCard {
+    text-align: start;
+    top: 29%;
+    left: 26px;
+    color: white;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    cursor: nesw-resize;
+}
+p#address-card {
+    font-size: 11px;
+    text-align: end;
+    top: 50%;
+    right: 56px;
+    height: 35px;
+    display: flex;
+    transform: translate(0px, -10px);
+    max-width: 184px;    
+    align-items: center;
+}
+p#phone-card {
+    font-size: 11px;
+    text-align: end;
+    top: 50%;
+    right: 56px;
+    height: 35px;
+    display: flex;
+    transform: translate(0px, 20px);
+    align-items: center;
+}
+p#mail-card {
+    font-size: 11px;
+    text-align: end;
+    top: 50%;
+    right: 56px;
+    height: 35px;
+    display: flex;
+    transform: translate(0px, 48px); 
+    align-items: center;
+}
+p#web-card {
+    font-size: 11px;
+    text-align: end;
+    top: 50%;
+    right: 56px;
+    height: 35px;
+    display: flex;
+    transform: translate(0px, 78px);   
+    align-items: center;
 }
