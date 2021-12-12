@@ -77,10 +77,31 @@
                 </div>
                 <p>- 100 items -</p>
             </div>
+            <div class="card-custom">
+                <div class="your-contac">
+                    <h1>Thiết kế thẻ theo phong cách riêng, thương hiệu của bạn.</h1>
+                    <p>Nhập SĐT. SmartCard sẽ liên hệ bạn ngay</p>
+                    <div class="input">
+                        <input type="text" class="form-control" id="your-phone" placeholder="Nhập SĐT của bạn">
+                        <button type="button" class="btn btn-outline-secondary">Gửi Đi</button>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h2>Hoặc liên hệ SmartCard</h2>
+                    <div class="contact-social">
+                        <img src="./img/zalo.png" alt="">
+                        <img class="center" src="./img/facebook.png" alt="">
+                        <img src="./img/telegram.png" alt="">
+                    </div>
+                </div>                
+                <div class="background"></div>
+            </div>
         </div>
     </div>
+
     <div class="popup-setup">
         <div class="container">
+            <i class='bx bx-x close'></i>
             <div class="display">
                 <div class="logo">
                     <h1>Thẻ Của Bạn</h1>
@@ -105,20 +126,24 @@
                 </div>
             </div>
             <div class="edit">
-                <h1>Chỉnh sửa thông tin cơ bản của bạn</h1>
-                <h2>Mặt Trước</h2>
+                <h1>Thông tin trên thẻ</h1>
+                <h2>Thông tin mặt trước thẻ</h2>
                 <input type="text" class="form-control" id="nameFontFace" placeholder="SmartCard">
                 <input type="text" class="form-control" id="sloganFontFace" placeholder="Một Chạm Để Kết Nối">
 
-                <h2>Mặt Sau</h2>                
+                <h2>Thông tin mặt sau thẻ</h2>                
                 <input type="text" class="form-control" id="nameBackFace" placeholder="Đồng Thị Nhung">
                 <input type="text" class="form-control" id="sloganBackFace" placeholder="Deverloper">
                 <h2>thông tin thêm</h2>
-                <p>Các thông tin dưới đây không bắt buộc. Design sẽ tự động căn chỉnh lại cho bạn trước khi in ấn.</p>
+                <p>Thông tin không cần thiết bạn có thể bỏ trống. Design sẽ tự động căn chỉnh lại cho bạn trước khi in ấn.</p>
                 <input type="text" class="form-control" id="address" placeholder="Sô 10, ngõ 17, Đại Mỗ, Nam Từ Liêm, Hà Nội">
-                <input type="text" class="form-control" id="phone" placeholder="0353013130">
-                <input type="text" class="form-control" id="mail" placeholder="smartcardtap@gmail.com">
+                <input type="number" class="form-control" id="phone" placeholder="0353013130">
+                <input type="mail" class="form-control" id="mail" placeholder="smartcardtap@gmail.com">
                 <input type="text" class="form-control" id="web" placeholder="smartcard.info.vn">
+                <input type="text" class="form-control" id="note" placeholder="Ghi chú">
+                <div class="btn">
+                    <button class="btn btn-primary" type="submit">Đặt Thẻ</button>
+                </div>
             </div>
         </div>
     </div>

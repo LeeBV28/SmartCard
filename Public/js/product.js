@@ -83,9 +83,11 @@ sloganFontFace.onkeyup = function() {
 }
 nameBackFace.onkeyup = function() {
     document.getElementById('name-card-backFace').innerText = nameBackFace.value;
+    hanlReseze('name-card-backFace');
 }
 sloganBackFace.onkeyup = function() {
     document.getElementById('slogan-card-backCard').innerText = sloganBackFace.value;
+    hanlReseze('slogan-card-backCard')
 }
 address.onkeyup = function() {
     document.getElementById('address-card').innerText = address.value;
@@ -100,30 +102,49 @@ web.onkeyup = function() {
     document.getElementById('web-card').innerText = web.value;
 }
 
-var element = document.getElementById('name-card-backFace');
-var resizer = document.createElement('div');
-resizer.className = 'resizer';
-resizer.style.width = '10px';
-resizer.style.height = '10px';
-resizer.style.background = 'red';
-resizer.style.position = 'absolute';
-resizer.style.right = 0;
-resizer.style.bottom = 0;
-resizer.style.cursor = 'se-resize';
-element.appendChild(resizer);
-resizer.addEventListener('mousedown', initResize, false);
 
-function initResize(e) {
-   window.addEventListener('mousemove', Resize, false);
-   window.addEventListener('mouseup', stopResize, false);
-}
-function Resize(e) {
-    console.log(e.clientY)
-//    element.style.width = (e.clientX - element.offsetLeft) + 'px';
-//    element.style.height = (e.clientY - element.offsetTop) + 'px';
-}
-function stopResize(e) {
-    window.removeEventListener('mousemove', Resize, false);
-    window.removeEventListener('mouseup', stopResize, false);
-}
+function hanlReseze(elementDom) {
+    var element = document.getElementById(elementDom);
+    var resizer = document.createElement('div');
+    resizer.className = 'resizer';
+    resizer.style.width = '10px';
+    resizer.style.height = '10px';
+    resizer.style.background = 'red';
+    resizer.style.position = 'absolute';
+    resizer.style.right = 0;
+    resizer.style.bottom = 0;
+    resizer.style.cursor = 'se-resize';
+    resizer.style.opacity = 0;
+    element.appendChild(resizer);
+    resizer.addEventListener('mousedown', initResize, false);
+
+
+    function initResize(e) {
+    window.addEventListener('mousemove', Resize, false);
+    window.addEventListener('mouseup', stopResize, false);
+    }
+    function Resize(e) {
+        document.getElementById(elementDom).style.fontSize = e.clientY/4.5 + 'px';
+    }
+    function stopResize(e) {
+        window.removeEventListener('mousemove', Resize, false);
+        window.removeEventListener('mouseup', stopResize, false);
+    }
+};
+
+
+document.querySelector('.popup-setup .close').onclick = function() {
+    document.querySelector('.popup-setup').style.display = 'none';
+};
+document.querySelector('.popup-setup').onclick = function(e) {
+    var container = $(".popup-setup .container");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        this.style.display = 'none';
+    }
+};
+document.querySelectorAll('.option button').forEach(function(item) {
+    item.onclick = function() {
+        document.querySelector('.popup-setup').style.display = 'block';
+    }
+})
 
