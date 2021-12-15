@@ -1,4 +1,37 @@
-
+.body {
+    margin-top: 0;
+}
+img.drop-saleup {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.ready {
+    border: 1px solid #f9f9f9;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #abc4ff;
+    color: #ffff;
+    position: relative;
+}
+.ready i.bx.bx-chevrons-down {
+    position: absolute;
+    bottom: -22px;
+    left: 12%;
+    font-size: 119px;
+    text-align: center;
+    opacity: 0.5;
+}
+.ready h1 {
+    text-align: start;
+    font-size: 26px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.ready p {
+    text-align: start;
+    text-transform: capitalize;
+}
 .product {
     display: flex;
     flex-wrap: wrap;
@@ -163,7 +196,8 @@ img.front-face {
 }
 .display .logo h1 {
     font-weight: 500;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One', cursive;    
+    text-align: center;
 }
 .display .pay {
     margin-top: 10px;
@@ -289,7 +323,7 @@ img.front-face {
     color: white;
 }
 
-h2 {font-size: 20px;text-align: center;}
+/* h2 {font-size: 20px;text-align: center;} */
 .card-custom .background {
     position: absolute;
     left: 0;

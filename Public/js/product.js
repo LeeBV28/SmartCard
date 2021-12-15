@@ -13,7 +13,7 @@ optionBtns.forEach(function(item) {
         var fontFace = imgItemE.children[0].getAttribute('src');
         var backFace = imgItemE.children[1].getAttribute('src');
         if(this.classList.contains("active")) {
-            imgItemE.style = `transform: translateX(-287px);`;
+            imgItemE.style = `transform: translateX(-295px);`;
             this.src = fontFace;
         }
         else {
