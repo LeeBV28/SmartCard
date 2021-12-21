@@ -13,7 +13,7 @@ optionBtns.forEach(function(item) {
         var fontFace = imgItemE.children[0].getAttribute('src');
         var backFace = imgItemE.children[1].getAttribute('src');
         if(this.classList.contains("active")) {
-            imgItemE.style = `transform: translateX(-295px);`;
+            imgItemE.style = `transform: translateX(-287px);`;
             this.src = fontFace;
         }
         else {
@@ -145,6 +145,6 @@ document.querySelector('.popup-setup').onclick = function(e) {
 document.querySelectorAll('.option button').forEach(function(item) {
     item.onclick = function() {
         document.querySelector('.popup-setup').style.display = 'block';
-    }
+    }   
 })
 

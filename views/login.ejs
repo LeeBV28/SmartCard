@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIN</title>
+    <script src="https://kit.fontawesome.com/7fbca7d9d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/log_in.css">
+</head>
+<body>    
+    <div class="container">
+        <div class="lognin">
+            <div class="lognin_img">
+                <img src="./img/Social_media.png" alt="image">
+            </div>
+            <div class="lognin_conten">
+                <div class="row signup">
+                    <h2>Đăng Ký</h2>
+                    <div class="form">
+                        <div class="input">
+                            <input id="full_name" class="input_field" type="text" placeholder=" ">
+                            <label for="full_name" class="input_label">Họ tên của bạn</label>
+                        </div>
+                        <div class="input">
+                            <input id="user_name" class="input_field" type="text" placeholder="Chỉ nhập chữ và số">
+                            <label for="user_name" class="input_label">Tên đăng nhập</label>
+                        </div>
+                        <div class="input">
+                            <input id="email" class="input_field" type="email" placeholder=" ">
+                            <label for="email" class="input_label">Email</label>
+                        </div>
+                        <div class="input">
+                            <input id="id_itap" class="input_field" type="text" placeholder="Nhập mã Itap được gửi kèm thẻ">
+                            <label for="id_itap" class="input_label">Mã ITap</label>
+                        </div>
+                        <div class="input">
+                            <button>Đăng Ký</button>
+                        </div>
+                    </div>
+                    <div class="from_footer">
+                        <p>Nếu đã có tài khoản! <span class="span_button">Đăng Nhập</span></p>
+                    </div>
+                </div>
+                    <!-- =========Đăng Nhập =========== -->
+                <div class="row signin none">
+                    <h1>Đăng Nhập</h1>
+                    <div class="form">
+                        <div class="input">
+                            <input id="signin_usename" class="input_field" type="text" placeholder=" ">
+                            <label for="signin_usename" class="input_label">Tên đăng nhập</label>
+                        </div>
+                        <div class="input">
+                            <input id="password" class="input_field" type="text" placeholder=" ">
+                            <label for="password" class="input_label">Mật Khẩu</label>
+                        </div>
+                        <p class="signin_forgot_password">
+                            Quên mật khẩu?
+                        </p>
+                        <div class="input">
+                            <button>Đăng Nhập</button>
+                        </div>                        
+                        <div class="from_footer">
+                            <p>Quay lại<span class="span_button">Đăng Ký</span></p>
+                        </div>
+                    </div>   
+                </div>
+                <!-- == forgot password == -->
+                <div class="row forgot_password none">
+                    <h1>quên mật khẩu</h1>
+                    <div class="form">
+                        <div class="input">
+                            <input id="forgot_email" class="input_field" type="email" placeholder=" ">
+                            <label for="forgot_email" class="input_label">Email</label>
+                        </div>
+                        <div class="input">
+                            <button>Quên Mật Khẩu</button>
+                        </div>
+                    </div>
+                    <div class="from_footer">
+                        <p>Quay lại!<span class="signin_forgot_password">Đăng Nhập</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer">©2021 ITap.vn - All rights reserved.</p>
+    </div>
+    
+    
+
+    <script type="text/javascript" src="./js/log_in.js"></script>
+</body>
+</html>
